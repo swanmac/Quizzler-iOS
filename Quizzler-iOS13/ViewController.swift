@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-        questionLabel.text = quiz[questionNumber]
+        questionLabel.text = quiz[questionNumber][0]
     }
     
 

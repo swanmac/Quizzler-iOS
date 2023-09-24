@@ -32,6 +32,9 @@ class ViewController: UIViewController {
         
     }
     @IBAction func answerButtonPressed(_ sender: UIButton) {
+
+        let userAnswer = sender.currentTitle
+
         questionNumber += 1
         updateUI()
     }

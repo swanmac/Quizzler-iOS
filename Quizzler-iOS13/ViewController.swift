@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         
         if userAnswer == actualAnswer {
             print("Right!")
+        } else {
+            print("Wrong!")
     }
 
         questionNumber += 1

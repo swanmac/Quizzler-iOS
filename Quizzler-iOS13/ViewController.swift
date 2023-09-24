@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     let quiz = [
         "Four + Two is equal to Six."
+        "Five - three is greater than One."
+        "Three + Eight is less than Ten."
     ]
     
     override func viewDidLoad() {

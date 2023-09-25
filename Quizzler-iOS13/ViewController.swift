@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         if userAnswer == actualAnswer {
             print("Right!")
         } else {
-            print("Wrong!")
+            print("Wrong")
     }
         if questionNumber + 1 < quiz.count {
             questionNumber += 1

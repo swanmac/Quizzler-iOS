@@ -33,7 +33,8 @@ class ViewController: UIViewController {
     }
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         
-        let userAnswer = sender.currentTitle
+        let userAnswer = sender.currentTitle //True, False
+        let actualQuestion = quiz[questionNumber]
         let actualAnswer = quiz[questionNumber].answer
         
         if userAnswer == actualAnswer {

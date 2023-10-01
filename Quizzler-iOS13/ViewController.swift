@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     
     let quiz = [
         Question(text: "Four + Two is equal to Six.", answer: "True"),
-        Question(text: "Four + Two is equal to Six.", answer: "True"),
-        Question(text: "Four + Two is equal to Six.", answer: "True")
+        Question(text: "Five - three is greater than One", answer: "True"),
+        Question(text: "Three + Eight is less than Ten.", answer: "False")
         ["Five - three is greater than One.", "True"],
         ["Three + Eight is less than Ten.", "False"]
     ]

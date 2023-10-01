@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var falseButton: UIButton!
     
     let quiz = [
-        Question()
-        ["Four + Two is equal to Six.", "True"],
+        Question(text: "Four + Two is equal to Six.", answer: "True"),
+        Question(text: "Four + Two is equal to Six.", answer: "True"),
+        Question(text: "Four + Two is equal to Six.", answer: "True")
         ["Five - three is greater than One.", "True"],
         ["Three + Eight is less than Ten.", "False"]
     ]

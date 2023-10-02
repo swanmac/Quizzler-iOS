@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         let userAnswer = sender.currentTitle!
         quizBrain.checkAnswer(userAnswer)
-        //let actualAnswer = quiz[questionNumber].answer
+        //let actualAnswer = quiz[questionNumber].answer (removed)
         
         if userAnswer == actualAnswer {
             sender.backgroundColor = UIColor.green

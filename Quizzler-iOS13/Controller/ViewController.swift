@@ -27,9 +27,9 @@ class ViewController: UIViewController {
     }
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         
-        let userAnswer = sender.currentTitle //True, False
-        //let actualQuestion = quiz[questionNumber].answer
-        let actualAnswer = quiz[questionNumber].answer
+        let userAnswer = sender.currentTitle!
+        quizBrain.checkAnswer(userAnswer)
+        //let actualAnswer = quiz[questionNumber].answer
         
         if userAnswer == actualAnswer {
             sender.backgroundColor = UIColor.green

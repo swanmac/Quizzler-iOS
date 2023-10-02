@@ -15,14 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
+    var quizBrain = QuizBrain()
+    
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         updateUI()
-        
         
         
     }

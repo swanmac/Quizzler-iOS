@@ -28,10 +28,10 @@ class ViewController: UIViewController {
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         
         let userAnswer = sender.currentTitle!
-        quizBrain.checkAnswer(userAnswer)
+        let userGotitRight = quizBrain.checkAnswer(userAnswer)
         //let actualAnswer = quiz[questionNumber].answer (removed)
         
-        if userAnswer == actualAnswer {
+        if userGotitRight {
             sender.backgroundColor = UIColor.green
         } else {
             sender.backgroundColor = UIColor.red
@@ -47,10 +47,12 @@ class ViewController: UIViewController {
     }
     
     @objc func updateUI() {
-        questionLabel.text = quiz[questionNumber].text
+        questionLabel.text = quizBrain.getQuestiontext()
+        progressBar.progress = quizBrain.getProgress()
+        
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
-        progressBar.progress = Float(questionNumber + 1) / Float(quiz.count)
+        
     }
     
 

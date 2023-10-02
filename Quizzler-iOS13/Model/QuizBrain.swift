@@ -26,8 +26,8 @@ struct QuizBrain {
     
     var questionNumber = 0
     
-    func checkAnswer(userAnswer: String) {
-        
+    func checkAnswer(_ userAnswer: String) {
+        print(userAnswer)
     }
 
 }

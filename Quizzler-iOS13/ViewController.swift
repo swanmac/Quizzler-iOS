@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         } else {
             questionNumber = 0
     }
-        Timer.scheduledTimer(TimeInterval: 0.2, target:self, selector: #selector(updateUI), userInfo:nil,  repeats: false)
+        Timer.scheduledTimer(timeInterval: 0.2, target:self, selector: #selector(updateUI), userInfo:nil,  repeats: false)
         
         
     }

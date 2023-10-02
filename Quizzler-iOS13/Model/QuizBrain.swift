@@ -27,7 +27,11 @@ struct QuizBrain {
     var questionNumber = 0
     
     func checkAnswer(_ userAnswer: String) {
-        print(userAnswer)
+        if userAnswer == quiz[questionNumber].answer {
+        //user got it right
+    } else {
+        //user got it wrong
+    }
     }
 
 }

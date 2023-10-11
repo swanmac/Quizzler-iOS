@@ -44,9 +44,7 @@ struct QuizBrain {
         return progress
     }
     
-    func getScore() -> Int {
-        return score[
-    }
+
     
     mutating func nextQuestion() {
         if questionNumber + 1 < quiz.count {
